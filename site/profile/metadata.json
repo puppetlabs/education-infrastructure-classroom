@@ -1,0 +1,32 @@
+{
+  "name": "pltraining-profile",
+  "version": "0.0.1",
+  "author": "pltraining",
+  "summary": "profiles to set up the various services on the classroom server",
+  "license": "Apache 2.0",
+  "source": "https://github.com/puppetlabs/education-infrastructure-classroom",
+  "project_page": "https://github.com/puppetlabs/education-infrastructure-classroom",
+  "issues_url": "https://tickets.puppetlabs.com/browse/TRAINTECH",
+  "description": "Important! This is not the module you are looking for.",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [ "6.0", "7.0" ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 2015.1.0 < 2018.0.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "4.x"
+    }
+  ],
+  "dependencies": [
+    {"name":"binford2k/abalone"},
+    {"name":"pltraining/showoff",             "version_requirement":">= 0.0.1"},
+    {"name":"puppetlabs/nginx",               "version_requirement":">= 1.1.1"}
+  ]
+}

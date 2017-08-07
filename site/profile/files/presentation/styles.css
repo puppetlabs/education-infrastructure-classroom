@@ -1,0 +1,47 @@
+#buttonNav {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+  #buttonNav div {
+    display: inline-block;
+    width: 50%;
+    line-height: 3em;
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  #buttonNav div:hover {
+    background-color: #3b719f;
+  }
+
+  #buttonNav div:active {
+    color: black;
+  }
+
+input[type=button] {
+  margin: 1em auto;
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fec847;
+  font-size: 2em;
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+}
+
+iframe {
+  border: none;
+  overflow: hidden;
+}
