@@ -25,11 +25,6 @@ class profile::requirements {
     subscribe => File['presentation'],
   }
 
-  file { '/etc/nginx/conf.d/default.conf':
-    ensure => file,
-    source => 'puppet:///modules/profile/nginx.proxy.conf',
-  }
-
   nginx::resource::location { 'classroom.puppet.com/shell/login':
     ensure        => present,
     rewrite_rules => ['^/shell/login http://$http_host/shell/login/ permanent'],
