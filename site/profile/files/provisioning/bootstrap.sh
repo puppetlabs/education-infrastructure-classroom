@@ -97,7 +97,7 @@ fi
 
 ############# now start doing stuffs! #################
 if [ -f /etc/redhat-release ]; then
-  yum install rubygems ntpdate
+  yum install -y rubygems ntpdate
 elif [ -f /etc/debian_version ]; then
   echo "The Debian platform is support best-effort only."
   echo "       Press [enter] to continue."
@@ -113,9 +113,11 @@ else
   read junk
 fi
 
-mkdir -p ${BINDIR}
-gem install puppet --bindir ${BINDIR}
+# Do this first to ensure that SSL connections are valid later
 ntpdate time.nist.gov
+
+mkdir -p ${BINDIR}
+gem install puppet --no-ri --no-rdoc --bindir ${BINDIR}
 
 mkdir -p ${CONFDIR}
 echo "[main]" > ${CONFDIR}/puppet.conf

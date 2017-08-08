@@ -16,6 +16,7 @@ class profile::provisioner (
 
   file { '/etc/puppetlabs/puppet/autosign.rb':
     ensure  => file,
+    mode    => '0755',
     content => file('profile/provisioning/autosign.rb'),
   }
 
