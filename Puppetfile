@@ -10,4 +10,4 @@ mod 'stahnma-epel',       '1.2.2'
 
 mod 'bootstrap',
   :git    => 'https://github.com/puppetlabs/pltraining-bootstrap.git',
-  :branch => 'reboot',
+  :branch => 'reboot'
