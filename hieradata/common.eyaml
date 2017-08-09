@@ -1,5 +1,5 @@
 ---
-bootstrap::courseware::key: >
+bootstrap::profile::courseware::key: >
     ENC[PKCS7,MIIOHQYJKoZIhvcNAQcDoIIODjCCDgoCAQAxggEhMIIBHQIBADAFMAACAQEw
     DQYJKoZIhvcNAQEBBQAEggEAdwH5qcHO6/vJ+458NxqfgQfeJKlMd+aUuv3C
     whDuCSp2Ca6z9wqL7NShmvI+b1/y5Nf4fGYxZC88+Ari9uFsMMQbSXlSmYYR
