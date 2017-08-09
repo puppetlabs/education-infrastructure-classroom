@@ -6,6 +6,7 @@ mod 'puppetlabs-concat',  '4.0.1'
 mod 'puppetlabs-inifile', '2.0.0'
 mod 'puppetlabs-ruby',    '1.0.0'
 mod 'puppetlabs-stdlib',  '4.17.1'
+mod 'puppetlabs-vcsrepo', '2.0.0'
 mod 'stahnma-epel',       '1.2.2'
 
 mod 'bootstrap',
