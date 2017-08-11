@@ -26,7 +26,7 @@
     },
     {
       element: "#questionToggle",
-      intro: "Clicking this button should open a dialog allowing you to post a question."
+      intro: "Clicking this button should open a dialog allowing you to post a question. This is the last test in this series."
     }
   ];
 </script>

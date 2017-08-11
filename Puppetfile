@@ -16,6 +16,7 @@ mod 'bootstrap',
 mod 'garethr-docker',         '5.3.0'
 mod 'pltraining-dockeragent', '0.0.14'
 mod 'pltraining-dirtree',     '0.3.0'
+mod 'pltraining-rbac',        '0.0.5'
 mod 'pltraining-userprefs',   '1.0.17'
 mod 'puppet-archive',         '1.3.0'
 mod 'puppet-virtualbox',      '1.8.0'
