@@ -117,7 +117,7 @@ fi
 ntpdate time.nist.gov
 
 mkdir -p ${BINDIR}
-gem install puppet --no-ri --no-rdoc --bindir ${BINDIR}
+gem install puppet --no-ri --no-rdoc <%= @puppetversion %> --bindir ${BINDIR}
 
 mkdir -p ${CONFDIR}
 echo "[main]" > ${CONFDIR}/puppet.conf

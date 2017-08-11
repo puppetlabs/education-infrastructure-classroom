@@ -11,7 +11,7 @@ class profile::provisioner (
 
   file { "${profile::nginx::docroot}/bootstrap.sh":
     ensure  => file,
-    content => file('profile/provisioning/bootstrap.sh'),
+    content => template('profile/provisioning/bootstrap.sh.erb'),
   }
 
   file { '/etc/puppetlabs/puppet/autosign.rb':
