@@ -3,7 +3,7 @@ class profile::ruby {
   include ruby::dev
   include epel
 
-  $packages = ['gcc', 'gcc-c++', 'make', 'automake', 'autoconf', 'zlib-devel', 'cmake', 'ruby-devel']
+  $packages = ['gcc', 'gcc-c++', 'make', 'automake', 'autoconf', 'zlib-devel', 'cmake']
 
   package { $packages:
     ensure => present,
@@ -17,7 +17,7 @@ class profile::ruby {
   if $facts['os']['name'] == 'RedHat' {
     yumrepo { 'rhui-REGION-rhel-server-optional':
       enabled => 1,
-      before  => Package['ruby-devel'],
+      before  => Class['ruby::dev'],
     }
   }
 }
