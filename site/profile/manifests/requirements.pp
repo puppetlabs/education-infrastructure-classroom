@@ -19,6 +19,12 @@ class profile::requirements {
     mode    => '0644',
     source  => 'puppet:///modules/profile/presentation',
   }
+  
+  file { "${showoff::root}/requirements/stats":
+    ensure => directory,
+    owner  => $showoff::user,
+    mode   => '0755',
+  }
 
   showoff::presentation { 'requirements':
     path      => "${showoff::root}/requirements",
