@@ -15,13 +15,18 @@ class profile::nginx (
   file { '/etc/nginx/ssl/classroom.puppet.com.pem':
     ensure => file,
     owner  => 'nginx',
-    source => '/etc/puppetlabs/puppet/ssl/certs/classroom.puppet.com.pem',
+    source => "/etc/puppetlabs/puppet/ssl/certs/${::trusted['certname']}.pem",
   }
   file { '/etc/nginx/ssl/classroom.puppet.com.key':
     ensure => file,
     owner  => 'nginx',
     mode   => '0600',
-    source => '/etc/puppetlabs/puppet/ssl/private_keys/classroom.puppet.com.pem',
+    source => "/etc/puppetlabs/puppet/ssl/private_keys/${::trusted['certname']}.pem",
+  }
+  
+  # gross hack so nginx can start prior to failing over to this node
+  host { 'classroom.puppet.com':
+    ip => $facts['ec2_metadata']['public-ipv4'],
   }
 
   nginx::resource::server { 'classroom.puppet.com':
