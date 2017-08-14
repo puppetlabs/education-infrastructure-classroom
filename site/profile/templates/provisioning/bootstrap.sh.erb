@@ -144,6 +144,9 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# since we probably changed the environment a bit
+source ~/.bashrc
+
 # run serverspec tests (which don't yet exist)
 classroom validate
 if [ $? -ne 0 ]; then
