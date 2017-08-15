@@ -103,7 +103,7 @@ elif [ -f /etc/debian_version ]; then
   echo "The Debian platform is support best-effort only."
   echo "       Press [enter] to continue."
   read junk
-  apt-get install rubygems ntpdate
+  apt-get install rubygems ntpdate 
 else
   echo "Unknown platform... YOLO! You may need to install the"
   echo "following packages on your own for this to succeed."
@@ -113,6 +113,24 @@ else
   echo " Press [enter] to continue."
   read junk
 fi
+
+# Choose the proper certname/hostname based on the role selected
+case $ROLE in
+  training)
+    CERTNAME='master.puppetlabs.vm'
+    ;;
+  proxy)
+    CERTNAME='proxy.puppetlabs.vm'
+  *)
+    echo "Role ${ROLE} is not supported."
+    exit 1
+    ;;
+esac
+
+# Modern Debian and RedHat/CentOS both use systemd.
+hostnamectl set-hostname --static ${CERTNAME}
+echo "127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 ${CERTNAME}" >  /etc/hosts
+echo "::1         localhost localhost.localdomain localhost4 localhost4.localdomain4 ${CERTNAME}" >> /etc/hosts
 
 # Do this first to ensure that SSL connections are valid later
 ntpdate time.nist.gov
