@@ -1,4 +1,5 @@
 class profile::requirements {
+  require epel
   require showoff
   require profile::ruby
   include profile::nginx
