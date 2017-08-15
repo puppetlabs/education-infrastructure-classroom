@@ -134,7 +134,7 @@ echo "  pp_role: ${ROLE}" >> ${CONFDIR}/csr_attributes.yaml
 echo "  pp_environment: ${CHANNEL}" >> ${CONFDIR}/csr_attributes.yaml
 
 # duplicate so the PE install gets the trusted facts too
-mkdir /etc/puppetlabs/puppet
+mkdir -p /etc/puppetlabs/puppet
 ln -s ${CONFDIR}/csr_attributes.yaml /etc/puppetlabs/puppet/csr_attributes.yaml
 
 ${BINDIR}/puppet agent -t --confdir ${CONFDIR}
