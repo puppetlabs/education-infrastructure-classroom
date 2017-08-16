@@ -23,11 +23,6 @@ class profile::nginx (
     mode   => '0600',
     source => "/etc/puppetlabs/puppet/ssl/private_keys/${::trusted['certname']}.pem",
   }
-  
-  # gross hack so nginx can start prior to failing over to this node
-  host { 'classroom.puppet.com':
-    ip => $facts['ec2_metadata']['public-ipv4'],
-  }
 
   nginx::resource::server { 'classroom.puppet.com':
     www_root => $docroot,
