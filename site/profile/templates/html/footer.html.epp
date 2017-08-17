@@ -1,2 +1,112 @@
+<footer id='puppet-footer'>
+  <div class="footer-row-1">
+    <div class="navigation-column">
+      <nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer">
+        <div class="footer-menu-container">
+          <div class="fg-col">
+            <img src="images/puppet-logo-white-sm.png" class="puppet-logo">
+          </div>
+          <div class="fg-col category-col" data-category="Overview">
+            <div class="col-title">Overview</div>
+            <ul>
+              <li><a href="/product">Product</a></li>
+              <li><a href="/solutions">Solutions</a></li>
+              <li><a href="/resources">Resource library</a></li>
+              <li><a href="/company">Company</a></li>
+              <li><a href="/product/open-source-projects">Open source projects</a></li>
+              <li><a href="/security">Security</a></li>
+            </ul>
+          </div>
+          <div class="fg-col category-col" data-category="Resources">
+            <div class="col-title">Resources</div>
+            <ul>
+              <li><a href="/support/customer-support">Get help</a></li>
+              <li><a href="/partners/partner-finder">Find a partner</a></li>
+              <li><a href="/support/training">Training</a></li>
+              <li><a href="/sitemap">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="fg-col category-col" data-category="Connect">
+            <div class="col-title">Connect</div>
+            <ul>
+              <li><a href="/company/contact">Contact us</a></li>
+              <li><a href="/community/events">Events</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="newsletter-column">
+      <div class="col-title">Join our mailing list</div>
+      <div class="newsletter-row">Get our monthly newsletter and the occasional email we think you'll like.</div>
+      <form class="newsletter-row lpeRegForm formNotEmpty" method="post" enctype="application/x-www-form-urlencoded" action="https://app-sjh.marketo.com/index.php/leadCapture/save" id="mktForm_1047" name="mktForm_1047">
+        <input name="Email" id="Email" type="email" placeholder="Enter your email" class="mktFormText mktFormEmail mktFReq" maxlength="255" tabindex="1" value="">
+        <button id="mktFrmSubmit" type="submit" name="submitButton" class="form-submit">
+          <img src="images/small-arrow-gray.svg" title="Join">
+        </button>
+        <div class='pingmachine'>
+            Please don't enter anything into this text field:
+            <input type='text' name='pingmachine' size='30'/>
+        </div>
+        <input class="mktFormHidden" name="optInImplicit" id="optInImplicit" type="hidden" value="yes">
+        <input class="mktFormHidden" name="Form_Name__c" id="Form_Name__c" type="hidden" value="Newsletter">
+        <input class="mktFormHidden" name="Current_Form_Name__c" id="Current_Form_Name__c" type="hidden" value="Newsletter">
+        <input class="mktFormHidden" name="Original_Campaign_ID__c" id="Original_Campaign_ID__c" type="hidden" value="701G0000000F68K">
+        <input class="mktFormHidden" name="campaign_ID__c" id="campaign_ID__c" type="hidden" value="701G0000000F68K">
+        <input class="mktFormHidden" name="Current_Lead_Source__c" id="Current_Lead_Source__c" type="hidden" value="Organic">
+        <input class="mktFormHidden" name="LeadSource" id="LeadSource" type="hidden" value="Organic">
+        <input class="mktFormHidden" name="LeadSourceDescription__c" id="LeadSourceDescription__c" type="hidden" value="Search">
+        <input class="mktFormHidden" name="CurrentLeadSourceDescription__c" id="CurrentLeadSourceDescription__c" type="hidden" value="Search">
+        <input class="mktFormHidden" name="Custom_Campaign__c" id="Custom_Campaign__c" type="hidden" value="null">
+        <input class="mktFormHidden" name="Current_Custom_Campaign__c" id="Current_Custom_Campaign__c" type="hidden" value="null">
+        <span style="display:none;"><input type="text" name="honeypot" value=""></span>
+        <span style="display:none;"><input type="text" name="_marketo_comments" value=""></span>
+        <input type="hidden" name="lpId" value="-1">
+        <input type="hidden" name="subId" value="100">
+        <input type="hidden" name="munchkinId" value="307-QLA-991">
+        <input type="hidden" name="kw" value="">
+        <input type="hidden" name="cr" value="">
+        <input type="hidden" name="searchstr" value="">
+        <input type="hidden" name="lpurl" value="http://info.puppet.com/newslettersubscribe.html?cr={creative}&amp;kw={keyword}">
+        <input type="hidden" name="formid" value="1047">
+        <input type="hidden" name="returnURL" value="https://puppet.com">
+        <input type="hidden" name="retURL" value="https://puppet.com/misc/subscription-thank-you">
+        <input type="hidden" name="returnLPId" value="-1">
+        <input type="hidden" name="_mkt_disp" value="return">
+        <input type="hidden" name="_mkt_trk" value="">
+      </form>
+      <script type="text/javascript" src="js/mktFormSupport.js"></script>
+    </div>
+    <div class="newsletter-row">
+      <a href="https://twitter.com/puppetize" class="social-icon">
+        <img src="images/twitter-box-white.svg" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/company/puppet" class="social-icon">
+        <img class="social-icon" src="images/linkedin-box-white.svg" alt="Linkedin"></a>
+      <a href="https://www.facebook.com/PuppetSoftware" class="social-icon">
+        <img class="social-icon" src="images/facebook-box-white.svg" alt="Facebook"></a>
+      <a href="https://www.youtube.com/c/Puppet-Inc" class="social-icon">
+        <img class="social-icon" src="images/youtube-white.svg" alt="Youtube"></a>
+      <a href="https://plus.google.com/+Puppetlabs" class="social-icon">
+        <img class="social-icon" src="images/g-plus-white.svg" alt="Google+"></a>
+    </div>
+  </div>
+  <div class="footer-row-2">
+    <div class="footer-row-2-wrapper">
+      <div class="footer-row-2-col-1">
+        <a href="/legal">Legal</a>
+        <a>/</a>
+        <a href="/legal/privacy">Privacy policy</a>
+        <a>/</a>
+        <a href="/legal/terms">Terms of use</a>
+      </div>
+      <div class="footer-row-2-col-2">
+        <a href="/">© 2016 Puppet</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 	</body>
 </html>

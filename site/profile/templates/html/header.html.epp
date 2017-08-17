@@ -1,6 +1,97 @@
-<html
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 		<title>Puppet Education</title>
-	</head>
-	<body>
-	  <h1>Classroom.puppet.com</h1>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="scripts/jquery.sticky.min.js"></script>
+    <script src="scripts/header.js"></script>
+</head>
+<body>
+
+<!-- Global Header/Main Menu -->
+<div class="global-header">
+    <div class="global-header__row __row1">
+        <nav class="global-header__nav-satellite"></nav>
+        <nav class="global-header__nav-satellite">
+            <div class="global-header__nav-satellite__item">
+                <a href="https://puppet.com" class="home">Home</a>
+            </div>
+            <div class="global-header__nav-satellite__item">
+                <a href="https://puppet.com/puppetconf" class="offsite">PuppetConf</a>
+            </div>
+            <div class="global-header__nav-satellite__item">
+                <a href="https://forge.puppet.com/" class="offsite">Forge</a>
+            </div>
+            <div class="global-header__nav-satellite__item">
+                <a href="http://docs.puppet.com" class="offsite">Docs</a>
+            </div>
+            <div class="global-header__nav-satellite__item">
+                <a href="https://learn.puppet.com/" class="offsite">Learn</a>
+            </div>
+            <div class="global-header__nav-satellite__item">
+                <a href="https://puppet.comcompany/contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+    <div class="global-header__row __row2">
+        <div class="global-header__row__col __col1">
+            <a href="/">
+                <img src="images/puppet-logo-amber-white-lg.png">
+            </a>
+        </div>
+				<div class="global-header__row__col __col2">
+            <nav class="global-header__nav-main">
+
+                <!-- Example Menu Link -->
+                <div class="global-header__nav-main__item dropdown open">
+
+                </div>
+
+                <!-- Hamburger -->
+                <div class="global-header__nav-main__item hamburger">
+                    <a class="dropdown__tab hamburger-a">
+                        <img class="menu-white" src="images/menu-white.svg" alt="Menu">
+                        <img class="menu-amber" src="images/menu-amber.svg" alt="Menu">
+                    </a>
+                </div>
+
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="global-header__mobile-menu">
+    <div class="mobile-menu-close-button">x</div>
+    <nav class="global-header__nav-main-mobile">
+        <div class="global-header__nav-main__item mobile-search-wrapper">
+            <a href="#">Search</a>
+            <div class="mobile-sub-menu mobile-search">
+                <input type="text" class="mobile-search__input">
+                <img alt="Search" src="images/search-white-2.svg" class="search-white search-button">
+            </div>
+        </div>
+        <div class="global-header__nav-main__item">
+            <a href="/">Home</a>
+            <nav class="mobile-sub-menu">
+                <div class="mobile-sub-menu__item">
+                    <a href="http://puppetconf.com">PuppetConf</a>
+                </div>
+                <div class="mobile-sub-menu__item">
+                    <a href="http://forge.puppet.com/">Forge</a>
+                </div>
+                <div class="mobile-sub-menu__item">
+                    <a href="https://docs.puppet.com/">Docs</a>
+                </div>
+                <div class="mobile-sub-menu__item">
+                    <a href="https://learn.puppet.com/">Learn</a>
+                </div>
+            </nav>
+        </div>
+    </nav>
+</div>

@@ -1,5 +1,11 @@
-<p>We've set up a test environment you can use to validate that your system meets
-all of our classroom requirements. Simply click below and follow the
-directions.</p>
+<div class="container">
+  <article class="content">
+    <h1>Classroom Environment</h1>
 
-<input type="button" value="Get Started" onclick="javascript:window.location = 'http://' + window.location.hostname + ':9090'" />
+    <p>We've set up a test environment you can use to validate that your system meets
+    all of our classroom requirements. Simply click below and follow the
+    directions to check that you will be able to fully participate in our classes.</p>
+
+    <input type="button" class="btn btn-primary" value="Get Started" onclick="javascript:window.location = 'http://' + window.location.hostname + ':9090'" />
+  </article>
+</div>
