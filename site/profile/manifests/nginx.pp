@@ -23,6 +23,10 @@ class profile::nginx (
     mode   => '0600',
     source => "/etc/puppetlabs/puppet/ssl/private_keys/${::trusted['certname']}.pem",
   }
+  # gross hack so nginx can start prior to failing over to this node
+  host { 'classroom.puppet.com':
+    ip => $ipaddress, #$facts['ec2_metadata']['public-ipv4'],
+  }
 
   nginx::resource::server { 'classroom.puppet.com':
     www_root => $docroot,
@@ -39,9 +43,10 @@ class profile::nginx (
 #   }
 
   file { $docroot:
-    ensure => directory,
+    ensure  => directory,
+    source  => 'puppet:///modules/profile/html',
+    recurse => true,
   }
-
   concat { "${docroot}/index.html":
     owner => 'root',
     group => 'root',

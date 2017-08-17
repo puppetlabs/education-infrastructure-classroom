@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Calibre Web Regular';
+  src: local('Calibre Web Regular'), local('CalibreWeb-Regular'),
+  url(../../fonts/CalibreWeb-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Calibre Web Semibold';
+  src: local('Calibre Web Semibold'), local('CalibreWeb-Semibold'),
+  url(../../fonts/CalibreWeb-Semibold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Calibre Web Medium';
+  src: local('Calibre Web Medium'), local('CalibreWeb-Medium'),
+  url(../../fonts/CalibreWeb-Medium.woff) format('woff');
+}
+
+#puppet-footer {
+  padding-top: 60px;
+  background: #222222;
+  color: rgba(219, 218, 218, 0.5);
+  -webkit-font-smoothing: antialiased !important;
+  font-family: 'Calibre Web Regular',Helvetica,Tahoma,Arial,sans-serif;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+#puppet-footer, #puppet-footer * {
+  box-sizing: border-box;
+  position: relative;
+  overflow: auto;
+}
+
+#puppet-footer a, #puppet-footer a:link, #puppet-footer a:visited {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s linear;
+  text-decoration: none;
+}
+
+#puppet-footer a:hover, #puppet-footer a:active, #puppet-footer a:link:hover, #puppet-footer a:link:active, #puppet-footer a:visited:hover, #puppet-footer a:visited:active {
+  color: white;
+  transition: color 0.2s linear;
+  text-decoration: underline;
+}
+
+#puppet-footer .footer-row-1 {
+  padding: 0px 20px;
+}
+
+#puppet-footer .puppet-logo {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+#puppet-footer * + .fg-col {
+  margin-top: 20px;
+}
+
+#puppet-footer .col-title {
+  font-size: 1.3rem;
+  margin: 18px 0 20px 0;
+  color: rgba(219,218,218,0.5);
+}
+
+#puppet-footer .category-col ul {
+  list-style: none;
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  margin: 0;
+  padding: 0;
+}
+#puppet-footer .category-col ul li + li {
+  margin-top: 10px;
+}
+
+#puppet-footer .newsletter-column {
+  margin-top: 20px;
+}
+
+#puppet-footer .newsletter-row {
+  margin: 0 0 20px 0;
+  min-height: 20px;
+}
+
+#puppet-footer .newsletter-row input {
+  width: 100%;
+  background: #222222;
+  border: 1px solid rgba(219, 218, 218, 0.1);
+  padding: 0px 30px 0px 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  line-height: 40px;
+  height: 40px;
+}
+
+#puppet-footer .newsletter-row button.form-submit {
+  width: 36px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  background: transparent;
+  border: 0px;
+}
+#puppet-footer .newsletter-row .form-submit img {
+  top: 2px;
+  width: 14px;
+  height: 14px;
+}
+
+#puppet-footer .social-icon {
+  float: left;
+}
+
+#puppet-footer .social-icon + .social-icon {
+    margin-left: 10px;
+}
+
+#puppet-footer .social-icon img {
+  width: 20px;
+  height: auto;
+  opacity: 0.7;
+  transition: all 1s linear;
+}
+
+#puppet-footer .social-icon img:hover {
+  opacity: 1;
+  transition: all 1s linear;
+}
+
+#puppet-footer a.social-icon:first-child {
+  margin-left: 20px;
+}
+
+#puppet-footer .footer-row-2 {
+  margin-top: 20px;
+  border-top: 1px solid rgba(219, 218, 218, 0.1);
+}
+
+#puppet-footer .footer-row-2 .footer-row-2-wrapper {
+  padding: 10px;
+}
+
+#puppet-footer .footer-row-2-col-1 {
+  box-sizing: content-box;
+}
+
+#puppet-footer .footer-row-2-col-1 a {
+  color: rgba(219,218,218,0.5);
+  float: left;
+  margin-left: 10px;
+}
+
+#puppet-footer .footer-row-2-col-2 a {
+  float: right;
+  color: rgba(219,218,218,0.5);
+}
+
+@media only screen and (min-width: 780px) {
+
+  #puppet-footer .footer-row-1, #puppet-footer .footer-row-2-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  #puppet-footer .navigation-column {
+    float: left;
+    width: -webkit-calc(66.6666% - (20px / 2));
+    width: calc(66.6666% - (20px / 2));
+  }
+
+  #puppet-footer .navigation-column .fg-col {
+    float: left;
+    width: -webkit-calc(25% - (20px));
+    width: calc(25% - (20px));
+    margin-top: 0px;
+  }
+
+  #puppet-footer .navigation-column .fg-col {
+    margin-right: 20px;
+  }
+
+  #puppet-footer a.social-icon:first-child {
+    margin-left: 0px;
+  }
+
+  #puppet-footer .newsletter-column {
+    margin-top: 0px;
+  }
+
+  /* Hide the custom honeypot field. */
+  #puppet-footer .pingmachine {
+    display: none;
+  }
+
+  #puppet-footer .footer-row-2 {
+    margin-top: 50px;
+  }
+
+  #puppet-footer .footer-row-2-col-1 {
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  #puppet-footer .footer-row-1, #puppet-footer .footer-row-2-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+}
