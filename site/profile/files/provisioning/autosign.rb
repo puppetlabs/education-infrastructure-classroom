@@ -11,8 +11,6 @@ end
 if pass['value'] == psk
     exit 0
 else
-    puts "Preshared key does not match!"
-    puts " - PSK: ${psk}"
-    puts " - PASS: ${pass['value']}"
+    puts "Preshared key does not match: ${pass['value']}"
     exit 1
 end
