@@ -60,7 +60,7 @@ else
 fi
 
 ARRAY=(${EMAIL//@/ })
-DEFAULT="${ARRAY[0]}-$(date +%Y-%m-%d)"
+DEFAULT="${ARRAY[0]}-$(date +%Y-%m-%d-%H%M)"
 
 if [[ ! -v NONINTERACTIVE ]]; then
     echo -n "What would you like to call this node [${DEFAULT}]? "
