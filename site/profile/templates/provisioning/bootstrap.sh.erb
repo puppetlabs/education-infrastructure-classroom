@@ -6,7 +6,7 @@ BINDIR=/opt/pltraining/bin
 CONFDIR=/opt/pltraining/etc/puppet
 VARDIR=/opt/pltraining/var/puppet
 
-while getopts ":u:k:r:h" opt; do
+while getopts ":u:k:n:r:h" opt; do
   case $opt in
     k)
       KEY=$OPTARG
@@ -14,6 +14,10 @@ while getopts ":u:k:r:h" opt; do
       ;;
     u)
       EMAIL=$OPTARG
+      NONINTERACTIVE=1
+      ;;
+    n)
+      NAME=$OPTARG
       NONINTERACTIVE=1
       ;;
     r)
@@ -26,6 +30,7 @@ while getopts ":u:k:r:h" opt; do
       echo "Options:"
       echo "  * Email address: -u <email address>"
       echo "  * Setup key:     -k <setup key>"
+      echo "  * Hostname:      -n <unique hostname>"
       echo "  * Channel:       -c <stable|beta|testing>"
       echo "  * Machine role:  -r <training|proxy>"  # Add more roles here as we get them incorporated
       exit 1
@@ -71,7 +76,7 @@ if [[ ! -v NONINTERACTIVE ]]; then
     echo "Please Ctrl-C and run again if these are not the values you want."
     read junk
 
-else
+elif [ "$NAME" == "" ]; then
     NAME=$DEFAULT
 fi
 
