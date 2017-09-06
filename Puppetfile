@@ -24,3 +24,4 @@ mod 'puppetlabs-pe_gem',      '0.2.0'
 mod 'razorsedge-network',     '3.11.1'
 
 mod 'herculesteam-augeasproviders_grub', '3.0.0'
+mod 'herculesteam-augeasproviders_core', '2.1.3'
