@@ -22,6 +22,7 @@ mod 'puppet-archive',         '1.3.0'
 mod 'puppet-virtualbox',      '1.8.0'
 mod 'puppetlabs-pe_gem',      '0.2.0'
 mod 'razorsedge-network',     '3.11.1'
+mod 'saz-sudo',               '4.2.0'
 
 mod 'herculesteam-augeasproviders_grub', '3.0.0'
 mod 'herculesteam-augeasproviders_core', '2.1.3'
