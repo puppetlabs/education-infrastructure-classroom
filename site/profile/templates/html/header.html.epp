@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="scripts/jquery.sticky.min.js"></script>
-    <script src="scripts/header.js"></script>
+    <script src="js/jquery.sticky.min.js"></script>
+    <script src="js/header.js"></script>
 </head>
 <body>
 
