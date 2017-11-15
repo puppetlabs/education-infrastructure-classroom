@@ -125,11 +125,7 @@ select:focus {
 }
 
 .btn-primary {
-    background-image: linear-gradient(top, #ffae1a, #fec847);
-    background-repeat: repeat-x;
-    background-color: #fec847;
-    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    background-color: #ffae1a;
 }
 
 .btn-primary:hover,
