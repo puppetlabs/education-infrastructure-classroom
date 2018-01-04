@@ -20,7 +20,7 @@ class profile::requirements {
     mode    => '0644',
     source  => 'puppet:///modules/profile/presentation',
   }
-  
+
   file { "${showoff::root}/requirements/stats":
     ensure => directory,
     owner  => $showoff::user,
@@ -54,6 +54,13 @@ class profile::requirements {
       'X-NginX-Proxy true',
     ],
     proxy_read_timeout => '43200000',
+  }
+
+  # We'll just serve an image from this port to validate access.
+  # Gitea is a standard web app, so we'll just trust that it works.
+  nginx::resource::server { 'classroom.puppet.com gitea':
+    www_root    => $profile::nginx::docroot,
+    listen_port => 3000,
   }
 
   selinux::boolean { 'httpd_can_network_connect':

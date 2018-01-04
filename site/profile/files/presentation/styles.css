@@ -45,3 +45,13 @@ iframe {
   border: none;
   overflow: hidden;
 }
+
+.error {
+  color: #ff4545;
+  border: 5px solid #ff4545;
+  background-color: #fff7f7;
+  transition: border 0.2s linear;
+  padding: 1em;
+  margin: 2em;
+  text-align: center;
+}

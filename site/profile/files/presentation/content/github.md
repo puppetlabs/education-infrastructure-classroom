@@ -1,8 +1,23 @@
 <!SLIDE >
-# GitHub
+# Git Repository
 
-* We store and edit code in GitHub repositories.
-* Ensure that the site isn't blacklisted.
-* Create a free account if you don't already have one.
+* We store and edit code in Git repositories.
+* We'll be hosting a server on port 3000 in the classroom.
+* Let's ensure that you can reach that port.
+* You should see a green logo below.
 
-<input type="button" value="Create Account" onclick="window.open('https://github.com')" />
+<div id="gitea"></div>
+<div id="gitea_error" class="error" style="display: none;">Sorry, but it appears that you cannot load that port.</div>
+
+<script>
+  $(document).ready(function(){
+    $("#preso").bind("showoff:loaded", function (event) {
+      $("#gitea").html('<img src="http://' + window.location.hostname + ':3000/images/gitea.png" />');
+
+      $("#gitea img").on("error", function() {
+        $(this).hide();
+        $("#gitea_error").show();
+      });
+    });
+  });
+</script>
