@@ -3,6 +3,7 @@ class profile::requirements {
   require showoff
   require profile::ruby
   include profile::nginx
+  include profile::html
 
   Class['profile::ruby'] -> Class['showoff']
 
@@ -76,23 +77,6 @@ class profile::requirements {
 
   package { 'sl':
     ensure => present,
-  }
-
-  # home page blurb
-  concat::fragment { "Index fragment: requirements":
-    target  => "${profile::nginx::docroot}/index.html",
-    order   => '10',
-    content => epp('profile/html/requirements.html.epp'),
-  }
-
-  file { "${profile::nginx::docroot}/ssltest.html":
-    ensure => file,
-    source => 'puppet:///modules/profile/ssltest.html',
-  }
-
-  file { "${profile::nginx::docroot}/PuppetLogo_small.png":
-    ensure => file,
-    source => 'puppet:///modules/profile/PuppetLogo_small.png',
   }
 
 }
