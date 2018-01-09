@@ -9,9 +9,9 @@ mod 'puppetlabs-stdlib',  '4.17.1'
 mod 'puppetlabs-vcsrepo', '2.0.0'
 mod 'stahnma-epel',       '1.2.2'
 
+# this needs to be versioned soon!
 mod 'bootstrap',
-  :git    => 'https://github.com/puppetlabs/pltraining-bootstrap.git',
-  :branch => 'reboot'
+  :git    => 'https://github.com/puppetlabs/pltraining-bootstrap.git'
 
 mod 'garethr-docker',         '5.3.0'
 mod 'pltraining-dockeragent', '0.0.14'
