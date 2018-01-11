@@ -324,6 +324,13 @@
       }
     };
 
+    /* faq menu expansion */
+    $('#faq > li > .answer').hide();
+    $('#faq > li').on("click", function() {
+      $('#faq > li').not(this).children('.answer').hide(250);
+      $(this).children('.answer').toggle(250);
+    });
+
     // Initialize all header related code
     PH.init();
   });

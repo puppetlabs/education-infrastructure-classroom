@@ -42,25 +42,4 @@ class profile::nginx (
 #     server        => 'classroom.puppet.com',
 #   }
 
-  file { $docroot:
-    ensure  => directory,
-    source  => 'puppet:///modules/profile/html',
-    recurse => true,
-  }
-  concat { "${docroot}/index.html":
-    owner => 'root',
-    group => 'root',
-    mode  => '0644',
-  }
-  concat::fragment { 'index header':
-    target  => "${docroot}/index.html",
-    order   => '01',
-    content => epp('profile/html/header.html.epp'),
-  }
-  concat::fragment { 'index footer':
-    target  => "${docroot}/index.html",
-    order   => '100',
-    content => epp('profile/html/footer.html.epp'),
-  }
-
 }

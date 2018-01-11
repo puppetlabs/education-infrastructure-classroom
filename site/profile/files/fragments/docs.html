@@ -1,0 +1,111 @@
+  <article class="content">
+    <h2>Help</h2>
+
+    <p>This test environment will ensure that your browser meets minimum requirements
+      and that your network configuration allows you to access all the services we run
+      in the classroom. If the test fails to launch when you click the button, then
+      please inform us of the issue by responding to the email you received or by
+      directly emailing <a href="mailto:eduteam@puppet.com">eduteam@puppet.com</a>.</p>
+
+    <h2>FAQ</h2>
+
+    <ul id="faq">
+      <li>
+        <h4>Where can I find instructions for using the classroom tools?</h4>
+        <div class="answer">
+          <p>We use a tool that allows each student to perform classroom exercises by writing code
+            in a graphical editor and enforcing it on a virtualized agent node. Read the
+            <a href="classroom_tutorial.html">tutorial</a>.</p>
+        </div>
+      </li>
+      <li><h4>Where can I find tutorials on using the Git server?</h4>
+        <div class="answer">
+          <p>We run a self-hosted Git server called <a href="https://gitea.io">Gitea</a>.
+            While it does not have very extensive end-user documentation, the experience is very close to
+            that of GitHub. We suggest that if you want to practice your Git skills before class that
+            you sign up for a <a href="https://github.com">GitHub account</a> and then try out
+            <a href="https://guides.github.com/activities/hello-world/">this tutorial</a>.</p>
+        </div>
+      </li>
+      <li><h4>What firewall configuration is needed?</h4>
+        <div class="answer">
+          <p>We run several services that you will need to be able to access via web browser.
+            You may need to ask your network administrator to add rules allowing access.</p>
+          <ul>
+            <li>Puppetfactory classroom manager: HTTP on port 80</li>
+            <li>Puppet Enterprise Console: HTTPS on port 443</li>
+            <li>Gitea Repository Server: HTTP on port 3000</li>
+            <li>Courseware Presentation: HTTP and Websocket on port 9090</li>
+            <li>SSH access (optional): SSH on port 22</li>
+            <li><a href="https://support.zoom.us/hc/en-us/articles/201362683-Network-Firewall-or-Proxy-Server-Settings-for-Zoom">Zoom.us network requirements</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><h4>What are the browser requirements?</h4>
+        <div class="answer">
+          <p>Any modern browser should work. In general, we recommend one of the following.</p>
+          <ul>
+            <li>Relatively current versions of Firefox, Chrome, or Safari.</li>
+            <li>Microsoft Edge</li>
+            <li>Internet Explorer version 11+</li>
+          </ul>
+        </div>
+      </li>
+      <li><h4>Do I need to install a PDF reader?</h4>
+        <div class="answer">
+          <p>Probably not. Most modern browsers have a PDF reader built-in or use a platform
+            standard reader. If that is not the case for you, then readers such as
+            <a href="https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html">Adobe Acrobat Reader</a>
+            can be used free of charge.</p>
+        </div>
+      </li>
+      <li><h4>How can I correct issues with the video conferencing (Zoom.us) system?</h4>
+        <div class="answer">
+          <p>Check the <a href="https://support.zoom.us/hc/en-us/articles/201362683-Network-Firewall-or-Proxy-Server-Settings-for-Zoom">Zoom.us network requirements</a>.
+            Their support portal might also have other suggestions.</p>
+        </div>
+      </li>
+      <li><h4>How do I accept a self-signed certificate?</h4>
+        <div class="answer">
+          <p>You can find official instructions in the <a href="https://puppet.com/docs/pe/latest/accessing_console/console_accessing.html#accepting-the-console-certificate">Puppet Enterprise documentation</a>.</p>
+        </div>
+      </li>
+      <li><h4>What if I can't accept a self-signed certificate?</h4>
+        <div class="answer">
+          <p>Please email <a href="mailto:eduteam@puppet.com">eduteam@puppet.com</a> and
+            let us know. We may be able to help you.</p>
+        </div>
+      </li>
+      <li><h4>What can I do to mitigate a slow network?</h4>
+        <div class="answer">
+          <p>If you have limited bandwidth accessible to you, then you can try some
+            techniques to make the most of what you have.</p>
+          <ul>
+            <li>Are there other locations you can work from? Perhaps your office has
+              more bandwidth. Or perhaps home does!</li>
+            <li>Try shutting down competing services. For example, if you normally stream
+              music with Spotify or Pandora, you might try turning it off and only playing
+              music locally if you need it.</li>
+            <li>Try turning the camera off so that you're not streaming live video back
+              to the instructor. It's always good to see who you're talking with, but
+              it's better for the classroom to work!</li>
+            <li>Try rebooting your router/modem. Sometimes they work better after a
+              fresh start.</li>
+          </ul>
+        </div>
+      </li>
+      <li><h4>The classroom web terminal logged me out!</h4>
+        <div class="answer">
+          <p>In the quest for power efficiency and longer battery life, many browsers
+            will suspend web pages when you've not actively working with them. This means
+            that if the terminal is in a window or tab that you're not actively viewing,
+            your browser might stop maintaining the connection.</p>
+          <p>The Puppetfactory classroom manager will attempt to restore the connection
+            when you come back to the page, but if it's been a very long time it may
+            not be able to do so. While logging back in is a minor annoyance, you will
+            not lose any work. If you have to do so more than once or twice a day,
+            please let your instructor know.</p>
+        </div>
+      </li>
+    </ul>
+  </article>

@@ -185,3 +185,27 @@ select:focus {
 .btn-inverse {
     background-color: #222;
 }
+
+/* customizations */
+.get-started {
+    display: block;
+    margin: 2em auto 0;
+}
+
+#faq li {
+  cursor: pointer;
+}
+#faq li h4 {
+  margin: 0;
+}
+#faq li .answer > :first-child {
+  margin-top: 0;
+}
+
+article.tutorial img {
+  float: right;
+}
+article.tutorial div.break {
+  clear: both;
+  border-top: 1px dotted #ccc;
+}

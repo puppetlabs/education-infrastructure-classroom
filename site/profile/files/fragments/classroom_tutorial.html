@@ -1,0 +1,70 @@
+  <article class="content tutorial">
+    <h1>Classroom Environment</h1>
+
+    <p>We use a tool called <a href="https://github.com/puppetlabs/puppetfactory">Puppetfactory</a>
+      in our classrooms. This runs virtual Puppet agent nodes for each student and
+      provides web-based command-line access. Each student's codebase is developed
+      in a Git repository with a graphical web-based editor and enforced on agent
+      nodes. Students may also run certain interactive commands during class.</p>
+    <p>The standard workflow will be to:
+      <ol>
+        <li>Edit code in the repository</li>
+        <li>Deploy a release of the codebase to the Puppet master with the <i>Deploy Environment</i> button.</li>
+        <li>Run Puppet on the virtualized agent and observe results.</li>
+        <li>Update and iterate as needed.</li>
+      </ol>
+    </p>
+
+    <h2>Getting Started</h2>
+
+    <img src="images/puppetfactory_create.png" />
+    <p>Please create a user account for the classroom experience. The username and
+      password you choose will be used when logging in to the terminal, to the
+      Puppet Enterprise Console, and the Gitea repository server. Your instructor
+      will provide a <i>Session ID</i> that should be the same as the password
+      used to open PDF documents in the class.</p>
+
+    <p>If you get logged out for some reason, this home page will load again. Simply
+      choose the <i>Login</i> tab and enter your classroom username.</p>
+
+    <div class="break"></div>
+    <img src="images/puppetfactory_terminal.png" />
+    <p>Once you've created an account, the web terminal will load. Log in using
+      the username and password you specified. You are running a full Linux
+      machine with <code>root</code> access. You can perform any system administration
+      tasks you'd like. For example, you might try <code>yum install nano</code>
+      to install the Nano text editor.</p>
+    <p>The Puppet agent is already installed for you. Most of the interaction you'll
+      have with this terminal will be to run <code>puppet agent -t</code> to enforce
+      the code you've written, or to run <code>facter</code> to retrieve fact values
+      Your exercise instructions will explain what commands to run.</p>
+    <p>Notice the <i>Code Repository</i> link in the header. Click that link and
+      then sign in using the classroom credentials you specified.</p>
+
+    <div class="break"></div>
+    <img src="images/gitea_explore.png" />
+    <p>Now you'll be logged into the Gitea git repository, but you'll have a
+      mostly empty home page. Find the classroom codebase under the <i>Explore</i>
+      link in the Gitea header. Only one repository will be visible, so you
+      should select it.</p>
+
+    <div class="break"></div>
+    <img src="images/gitea_branch.png" />
+    <p>Then you should find your own branch in the repository. Click the
+      <i>Branch: production</i> drop-down and select your own branch.</p>
+
+    <div class="break"></div>
+    <img src="images/puppetfactory_deploy.png" />
+    <p>All of your code will be edited in your branch of this repository. Before
+      you can enforce it, you'll need to copy the code to the master. We call this
+      process <i>deploying a release</i>. In your own infrastructure you may have
+      processes already in place, such as a CI/CD server, or a control repository
+      webhook. In the classroom, we ask you to manually request a deployment by
+      pressing the <i>Deploy Environment</i> button. This will copy your code, and
+      only your code, to the Puppet master.</p>
+
+    <p>Once your code has been deployed, you can run <code>puppet agent -t</code>
+      at the command line in the web terminal. Each time you make code changes
+      that you want to test or enforce, you'll need to deploy again.</p>
+
+  </article>
