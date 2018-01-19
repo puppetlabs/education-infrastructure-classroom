@@ -74,6 +74,12 @@ class profile::requirements {
   selinux::boolean { 'httpd_can_network_connect':
     ensure => 'on',
   }
+  selinux::port { 'allow nginx on rdp port':
+    ensure   => 'present',
+    seltype  => 'http_port_t',
+    protocol => 'tcp',
+    port     => 3389,
+  }
 
   class { 'abalone':
     method      => 'command',
