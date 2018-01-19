@@ -9,7 +9,6 @@
 * If you see a logo below then your firewall allows RDP access.
 
 <div id="rdp"></div>
-<div id="rdp_error" class="error" style="display: none;">Sorry, but it appears that the RDP port is blocked.</div>
 
 <input type="button" value="Test HTML Client" onclick="window.open('https://cloud.thinrdp.net/WordPad/')" />
 
@@ -20,7 +19,6 @@
 
       $("#rdp img").on("error", function() {
         $(this).hide();
-        $("#rdp_error").show();
       });
     });
   });
