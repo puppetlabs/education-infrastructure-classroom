@@ -63,6 +63,13 @@ class profile::requirements {
     www_root    => $profile::nginx::docroot,
     listen_port => 3000,
   }
+  # We'll just serve an image from this port to validate RDP access.
+  # It would be unusual for a firewall to allow port access but then do
+  # packet inspection to block the RDP protocol, so I think this is sufficient.
+  nginx::resource::server { 'classroom.puppet.com rdp':
+    www_root    => $profile::nginx::docroot,
+    listen_port => 3389,
+  }
 
   selinux::boolean { 'httpd_can_network_connect':
     ensure => 'on',
