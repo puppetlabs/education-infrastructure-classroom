@@ -82,6 +82,41 @@ bootstrap::profile::courseware::key: >
     pVDTesQqnw++0PWpFoC6qN5m7SX89qDjsuHWNh8m7Ju4AGXf27GOJRI1DXet
     NdsKTpeTCNy1xXvmjoaPnT0=]
 
+bootstrap::profile::classroom::pagerduty_key: >
+    ENC[PKCS7,MIIBmQYJKoZIhvcNAQcDoIIBijCCAYYCAQAxggEhMIIBHQIBADAFMAACAQEw
+    DQYJKoZIhvcNAQEBBQAEggEApAN2vSBEfw0Xz6MFT8RAqrs2KMaJssbjSBke
+    VA/potFD6WgOTMKz3NMtdYkQndUPIBam8rlFuOLRb22gqStfjFfcLpt0mKo/
+    foR9DOBYioCx+ORkpcAcn75puDCp2xIrPKbP/sTTmzcModp8H9DcEfI7/9vC
+    WyskYmtOjaZA3xIWh1Zb3EDCLUaETfkGDauhClrMfPyWx9V9/JT0za9ATR8X
+    zHeWgk9YBq/Rpk/r7JT/z9oaZixh8WQj4VCom31jJg3SY+vzZ+GFGu/BfK29
+    ASOqw0Cdn9LYpgY17zaCcK7rR0iCmd3qP6D7XnP7pEfG44eb99lG5e+QPPyt
+    sf1SXjBcBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBC/Qv3IwEaF/iYYUjSc
+    nykegDCUClT4xkZcDZQGKZUiIocnvwssYWo7euyHVxn1GLMrFbL3uDiZxRl0
+    pXIaZaBaKeI=]
+
+bootstrap::profile::classroom::aws_access: >
+    ENC[PKCS7,MIIBiQYJKoZIhvcNAQcDoIIBejCCAXYCAQAxggEhMIIBHQIBADAFMAACAQEw
+    DQYJKoZIhvcNAQEBBQAEggEAzPmCT+TOrdzTIa/jQ+P/Ph8nOk7jsPeqjprk
+    ODfkdYnk+e5bYgO4eomZWfpaX3cYUV6B/OnO7qeV9wGcGALMIdqL2kqdzbUL
+    c2juMqgSeTkyzHI4+5zRHYFkKv8nInkJ6sK7QmJft+mgr7hzmbjablmsdYtd
+    RvR6sHVr/zyvKWj94WzKnGZ/XR2mFfDzyLIZSORy88YR/zBf82VSW2C6RDkP
+    XmjwkT2+tE/zwzlxkdL1kh/4hUkR8SwN6lDZc8mI5jWwRTxkfRsGdJDJImU7
+    ueWBSRPHBmNgwu1qCy6Aeuy/IYx44qUeLP5ywAI0nHT+DolMoSMGD1olCqIS
+    R/HWPDBMBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDQR2iKtLyIl10FZbGf
+    twmggCCKkj4ESG6/Amgq313Wtlukw9e3eM/Ce80Ko7Z5CKD1pw==]
+
+bootstrap::profile::classroom::aws_secret: >
+    ENC[PKCS7,MIIBmQYJKoZIhvcNAQcDoIIBijCCAYYCAQAxggEhMIIBHQIBADAFMAACAQEw
+    DQYJKoZIhvcNAQEBBQAEggEALtzASQAfPOBjOScEKwTb6p+p7dJYs/47PLSt
+    2dRG2FT9U13Pa0m9hLDC9Y1MmMTFGX1cWawX121foj5Fqdt4qapQ45DFPYqu
+    Wx6Dq+gEqzc+sa/CgTX0sKCectDRcpMMOO8Jsgn2PduH+byTZSB8Kc72i2nq
+    2218LcvGPlgeQHH6a1mtHO91/1N2WIlJkzmzIjuXf3N9AGMV19JS3cWrNav4
+    lriOO3x1LQKQcF0EEym94aCAfrv3t2Vbnv05pL4zbTOhdzrZJNUWazX3Ke14
+    OZz8n+2kzU9HSPi2oI0iIubPHUPu/qE+0mRToeYgTqhkZZQX8W08o1cv790E
+    /lNzQTBcBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBD7Bj6Mp2Z0W9Im4dIk
+    bOk+gDB6w7tdo6sM1K8q+CStgFOYzzhRw4ghgUaBIBkvD+7qPmSC58nX7MWf
+    sbYpkfjTh64=]
+
 profile::provisioner::psk: >
     ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
     DQYJKoZIhvcNAQEBBQAEggEAg0+Q+glGapkk5MpoGdaQoteGa/76MkLF5kEq
