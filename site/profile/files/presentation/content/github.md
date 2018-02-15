@@ -7,7 +7,7 @@
 * You should see a green logo below.
 
 <div id="gitea"></div>
-<div id="gitea_error" class="error" style="display: none;">Sorry, but it appears that you cannot load that port.</div>
+<p id="gitea_error" class="callout warning" style="display: none;">Sorry, but it appears that you cannot load that port.</p>
 
 <script>
   $(document).ready(function(){
