@@ -3,7 +3,7 @@
 
 * Video conferences always work better with a good connection.
 * Let's see what you've got.
-* We'd like to see 25Mbps or greater here.
+* We'd like to see at least 1.5Mbps here.
 
 <input id="networkTest" type="button" value="Test Connection" onclick="testNetwork()" />
 
