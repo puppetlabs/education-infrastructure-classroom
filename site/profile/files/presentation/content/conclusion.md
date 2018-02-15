@@ -3,5 +3,7 @@
 
 ![Puppet Logo](../_images/Puppet-Logo-Amber-Black.png)
 
-.callout.info Please reply to the email you received with the results of your
-tests.
+.callout.info.jira Use this button to let us know whether your tests passed or failed.
+<input id="report" type="button" value="Report Results" />
+
+.callout.info.fallback Please inform education@puppet.com if any tests failed.
