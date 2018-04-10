@@ -1,7 +1,7 @@
 <!SLIDE >
 # Puppet Enterprise Console
 
-* You'll interact with the PE Console in your class
+* You'll interact with the PE Console in your class.
 * It's secured with a self-signed SSL certificate.
 * Let's make sure you can use this.
     * Accept the certificate when prompted.

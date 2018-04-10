@@ -1,4 +1,4 @@
 <!SLIDE center cover>
-# Requirements Validator
+# Online Classroom Requirements Validator
 
 ![Puppet Logo](../_images/Puppet-Logo-Amber-Black.png)

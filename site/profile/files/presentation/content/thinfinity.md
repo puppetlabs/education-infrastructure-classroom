@@ -5,12 +5,10 @@
 * Skip this test if you are not registered in one of:
   * Puppetizing Infrastructure
   * Puppet Essentials for Windows
-* We provide both native RDP and a web based remote access client.
+* We provide access through native RDP client applications.
 * If you see a logo below then your firewall allows RDP access.
 
 <div id="rdp"></div>
-
-<input type="button" value="Test HTML Client" onclick="window.open('https://cloud.thinrdp.net/WordPad/')" />
 
 <script>
   $(document).ready(function(){
