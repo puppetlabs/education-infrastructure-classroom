@@ -2,7 +2,7 @@
 # Git Repository
 
 * We store and edit code in Git repositories.
-* We'll be hosting a server on port 3000 in the classroom.
+* We host a server on port 3000 in the classroom.
 * Let's ensure that you can reach that port.
 * You should see a green logo below.
 
