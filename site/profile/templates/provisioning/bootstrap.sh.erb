@@ -23,8 +23,8 @@ while getopts ":u:k:n:r:h" opt; do
     r)
       ROLE=$OPTARG
       ;;
-    c)
-      CHANNEL=$OPTARG
+    e)
+      ENVIRONMENT=$OPTARG
       ;;
     h)
       echo "Options:"
@@ -95,9 +95,8 @@ if [[ ! -v ROLE ]]; then
 fi
 
 
-# TODO: offer alternate channel selection in a menu stable/beta/testing
-if [[ ! -v CHANNEL ]]; then
-  CHANNEL='stable'
+if [[ ! -v ENVIRONMENT ]]; then
+  ENVIRONMENT='production'
 fi
 
 
@@ -157,13 +156,13 @@ echo "  challengePassword: ${KEY}" >> ${CONFDIR}/csr_attributes.yaml
 echo "extension_requests:" >> ${CONFDIR}/csr_attributes.yaml
 echo "  pp_created_by: ${EMAIL}" >> ${CONFDIR}/csr_attributes.yaml
 echo "  pp_role: ${ROLE}" >> ${CONFDIR}/csr_attributes.yaml
-echo "  pp_environment: ${CHANNEL}" >> ${CONFDIR}/csr_attributes.yaml
+echo "  pp_environment: ${ENVIRONMENT}" >> ${CONFDIR}/csr_attributes.yaml
 
 # duplicate so the PE install gets the trusted facts too. The new pltraining/classroom module uses them
 mkdir -p /etc/puppetlabs/puppet
 ln -s ${CONFDIR}/csr_attributes.yaml /etc/puppetlabs/puppet/csr_attributes.yaml
 
-${BINDIR}/puppet agent -t --no-show_diff --confdir ${CONFDIR}
+${BINDIR}/puppet agent -t --no-show_diff --confdir ${CONFDIR} --environment ${ENVIRONMENT}
 if [ $? -ne 2 ]; then  # The run succeeded, and some resources were changed.
   echo "Something broke!"
   echo
