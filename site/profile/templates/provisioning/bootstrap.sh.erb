@@ -6,7 +6,7 @@ BINDIR=/opt/pltraining/bin
 CONFDIR=/opt/pltraining/etc/puppet
 VARDIR=/opt/pltraining/var/puppet
 
-while getopts ":u:k:n:r:h" opt; do
+while getopts ":k:u:n:r:e:h" opt; do
   case $opt in
     k)
       KEY=$OPTARG
@@ -31,7 +31,7 @@ while getopts ":u:k:n:r:h" opt; do
       echo "  * Email address: -u <email address>"
       echo "  * Setup key:     -k <setup key>"
       echo "  * Machine name:  -n <unique name for machine>"
-      echo "  * Channel:       -c <stable|beta|testing>"
+      echo "  * Environment:   -e <environment (default: production)>"
       echo "  * Machine role:  -r <training|proxy>"  # Add more roles here as we get them incorporated
       exit 1
       ;;
