@@ -11,7 +11,8 @@ mod 'stahnma-epel',       '1.2.2'
 
 # this needs to be versioned soon!
 mod 'bootstrap',
-  :git    => 'https://github.com/puppetlabs/pltraining-bootstrap.git'
+  :git    => 'https://github.com/greglarkin/pltraining-bootstrap.git',
+  :ref    => 'pe_2018_1_0_upgrade'
 
 mod 'garethr-docker',         '5.3.0'
 mod 'pltraining-dockeragent', '0.0.14'
