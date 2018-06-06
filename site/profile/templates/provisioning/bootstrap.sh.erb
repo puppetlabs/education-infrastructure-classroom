@@ -103,6 +103,9 @@ fi
 ############# now start doing stuffs! #################
 if [ -f /etc/redhat-release ]; then
   yum install -y rubygems ntpdate
+  
+  # work around https://tickets.puppetlabs.com/browse/FACT-1289 which was causing terrible facter hangs
+  yum remove -y virt-what
 elif [ -f /etc/debian_version ]; then
   echo "The Debian platform is support best-effort only."
   echo "       Press [enter] to continue."
