@@ -143,6 +143,12 @@ ntpdate time.nist.gov
 mkdir -p ${BINDIR}
 gem install puppet --no-ri --no-rdoc --version <%= @puppetversion %> --bindir ${BINDIR}
 
+# work around FACT-1289 which was causing terrible facter hangs
+if [ $(/opt/pltraining/bin/facter --version) == "2.5.1" ]; then
+  curl https://github.com/puppetlabs/facter/commit/e7ed9ffb0afd7868a7772ee4eb03b39a11a6456d.diff -o /tmp/open_timeout.diff
+  patch -p1 -d /usr/local/share/gems/gems/facter-2.5.1/ < /tmp/open_timeout.diff
+fi
+
 mkdir -p ${CONFDIR}
 echo "[main]" > ${CONFDIR}/puppet.conf
 echo "  certname = ${NAME}.classroom.puppet.com" >> ${CONFDIR}/puppet.conf
