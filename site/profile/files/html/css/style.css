@@ -14,7 +14,7 @@ body {
 .container {
   width: 100%;
   background-color: #ffffff;
-  padding: 0;
+  padding: 2em 0 0 0;
   font-size: 1.1em;
   line-height: 1.5em;
 }
@@ -23,13 +23,14 @@ body {
   width: 90%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 0 0 2em 0;
 }
 
 h1,
 h2,
 h3,
 h4,
+h5,
 h6 {
   font-family: 'Calibre Web Semibold', Helvetica, Tahoma, Arial, sans-serif;
   font-weight: 400;
@@ -60,8 +61,6 @@ h4 {
 }
 
 h5 {
-    font-family: 'Calibre Web Regular', Helvetica, Tahoma, Arial, sans-serif;
-    font-weight: 400;
     color: #222;
     font-size: 1.2em;
     line-height: 1.2em;
@@ -184,22 +183,6 @@ select:focus {
 
 .btn-inverse {
     background-color: #222;
-}
-
-/* customizations */
-.get-started {
-    display: block;
-    margin: 2em auto 0;
-}
-
-#faq li {
-  cursor: pointer;
-}
-#faq li h4 {
-  margin: 0;
-}
-#faq li .answer > :first-child {
-  margin-top: 0;
 }
 
 article.tutorial img {
