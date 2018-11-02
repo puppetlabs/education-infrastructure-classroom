@@ -1,20 +1,20 @@
   <article class="content">
     <h2>Classroom requirements</h2>
-    <p>All of our classrooms require a modern browser, relatively current versions of Firefox, Chrome, Edge, or Safari.  For Internet Explorer, we only support 11.</p>
+    <p>All of our classrooms require a modern browser, relatively current versions of Firefox, Chrome, Edge, or Safari. For Internet Explorer, we only support version 11.</p>
 
-    <p>For virtual classes, you will need to be able to conect to Zoom.us.  You can test Zoom's requirements <a href="https://support.zoom.us/hc/en-us/articles/201362683-Network-Firewall-or-Proxy-Server-Settings-for-Zoom">here</a>.</p>
+    <p>For virtual classes, you will need to be able to conect to Zoom.us. You can test Zoom's requirements <a href="https://support.zoom.us/hc/en-us/articles/201362683-Network-Firewall-or-Proxy-Server-Settings-for-Zoom">here</a>.</p>
 
     <br>
 
     <h4>Getting Started With Puppet</h4>
     <p></p>
     <p class="answer">
-      You will need to be able to connect to the following ports in both directions. You may need to ask your network administrator to add rules allowing access.
+      You will need to be able to connect to the following destination ports. You may need to ask your network administrator to add rules allowing access.
     </p>
     <ul>
-      <li>Puppet Enterprise Console and Remote Desktop web client: HTTPS on port 443</li>
-      <li>SSH login: SSH on port 22</li>
-      <li>Remote Desktop: RDP on port 3389</li>
+      <li>Puppet Enterprise Console and other services: HTTPS on port 443</li>
+      <li>Linux login: SSH on port 22</li>
+      <li>Windows Remote Desktop: RDP on port 3389</li>
     </ul>
 
     <br>
@@ -28,18 +28,18 @@
     <p>This test environment will ensure that your browser meets minimum requirements and that your network configuration allows you to access all the services we run in the classroom. If the test fails to launch when you click the button, then please inform us of the issue by responding to the email you received or by directly emailing <a href="mailto:eduteam@puppet.com">eduteam@puppet.com</a>.</p>
 
     <p class="answer">
-      You will need to be able to connect to the following ports in both directions. You may need to ask your network administrator to add rules allowing access.
+      You will need to be able to connect to the following destination ports. You may need to ask your network administrator to add rules allowing access.
     </p>
     <ul>
       <li>Puppetfactory classroom manager: HTTP on port 80</li>
-      <li>Puppet Enterprise Console and Remote Desktop web client: HTTPS on port 443</li>
+      <li>Puppet Enterprise Console: HTTPS on port 443</li>
       <li>Gitea Repository Server: HTTP on port 3000</li>
       <li>Courseware Presentation: HTTP and Websocket on port 9090</li>
     </ul>
     <p class="answer">Some requirements are optional, or provide alternative connection means.
       These optional access rules include:</p>
     <ul>
-      <li>SSH login: SSH on port 22</li>
-      <li>Remote Desktop: RDP on port 3389</li>
+      <li>Linux login: SSH on port 22</li>
+      <li>Windows Remote Desktop: RDP on port 3389</li>
     </ul>
   </article>
