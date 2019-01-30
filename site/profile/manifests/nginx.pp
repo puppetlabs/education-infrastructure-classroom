@@ -29,10 +29,11 @@ class profile::nginx (
   }
 
   nginx::resource::server { 'classroom.puppet.com':
-    www_root => $docroot,
-    ssl      => true,
-    ssl_cert => '/etc/nginx/ssl/classroom.puppet.com.pem',
-    ssl_key  => '/etc/nginx/ssl/classroom.puppet.com.key',
+    www_root          => $docroot,
+    ssl               => true,
+    ssl_cert          => '/etc/nginx/ssl/classroom.puppet.com.pem',
+    ssl_key           => '/etc/nginx/ssl/classroom.puppet.com.key',
+    raw_prepend       => 'if ($uri ~ "^/bootstrap.sh$") { break; }',
     server_cfg_append => {
       'return 301' => 'https://learn.puppet.com/tech-requirements'
     },
