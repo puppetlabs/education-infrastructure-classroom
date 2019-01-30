@@ -33,6 +33,9 @@ class profile::nginx (
     ssl      => true,
     ssl_cert => '/etc/nginx/ssl/classroom.puppet.com.pem',
     ssl_key  => '/etc/nginx/ssl/classroom.puppet.com.key',
+    server_cfg_append => {
+      'return 301' => 'https://learn.puppet.com/tech-requirements'
+    },
   }
 
 #   nginx::resource::location { 'classroom.puppet.com':
